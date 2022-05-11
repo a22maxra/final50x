@@ -1,0 +1,19 @@
+{
+    "name": "Color Notes",
+    "version": "1.0.0",
+    "description": "Add color cordinated notes",
+    "manifest_version": 3,
+    "author": "Max6956",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Color Notes"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": ["content.js"]
+        }
+    ]
+}
