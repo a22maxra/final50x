@@ -4,10 +4,6 @@
     "description": "Add color cordinated notes",
     "manifest_version": 3,
     "author": "Max6956",
-    "action":{
-        "default_popup": "index.html",
-        "default_title": "Color Notes"
-    },
     "content_scripts": [
         {
             "matches": [
@@ -15,5 +11,16 @@
             ],
             "js": ["content.js"]
         }
-    ]
+    ],
+    "browser_action":{
+        "default_popup": "index.html",
+        "default_title": "Color Notes"
+    },
+    "background": {
+        "service_worker": "background.js"
+      },git 
+    "permissions": [
+    "storage",
+    "tabs"
+    ] 
 }
