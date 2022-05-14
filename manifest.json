@@ -1,7 +1,7 @@
 {
-    "name": "Color Notes",
+    "name": "Site Notes",
     "version": "1.0.0",
-    "description": "Add color cordinated notes",
+    "description": "Add notes to unique websites",
     "manifest_version": 3,
     "author": "Max6956",
     "content_scripts": [
@@ -12,13 +12,13 @@
             "js": ["content.js"]
         }
     ],
-    "browser_action":{
+    "action":{
         "default_popup": "index.html",
-        "default_title": "Color Notes"
+        "default_title": "Site Notes"
     },
     "background": {
         "service_worker": "background.js"
-      },git 
+      }, 
     "permissions": [
     "storage",
     "tabs"
